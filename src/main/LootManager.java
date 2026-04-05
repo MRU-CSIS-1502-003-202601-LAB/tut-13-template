@@ -13,18 +13,6 @@ public class LootManager {
         this.inventory = new ArrayList<>();
     }
 
-    public static LootManager load(String filePath) throws FileNotFoundException {
-        return null;
-    }
-
-    public void save(String filePath) throws FileNotFoundException {
-        return;
-    }
-
-    public void add(Loot loot) {
-        return;
-    }
-
     /**
      * Polymorphically displays all items in the inventory.
      */
@@ -32,9 +20,8 @@ public class LootManager {
         System.out.println();
         System.out.println("--- Current Inventory ---");
         for (Loot item : inventory) {
-            // TODO: Step 4 - Uncomment the line below
-            // System.out.println(item.getName() + " [" + item.getRarity() + "] - " +
-            // item.getEffectDescription());
+            System.out.println(item.getName() + " [" + item.getRarity() + "] - " +
+            item.getEffectDescription());
         }
         System.out.println("-------------------------");
         System.out.println();
