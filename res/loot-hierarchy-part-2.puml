@@ -8,7 +8,7 @@ class LootManager {
   - LootManager()
   + {static} load(filePath: String) : LootManager
   + displayInventory() : void
-  + save() : void
+  + save(filePath: String) : void
   + add(loot: Loot) void
 }
 
@@ -16,10 +16,10 @@ abstract class Loot {
   - name : String
   - rarity : String
   + Loot(name : String, rarity : String)
-  + getName() : String
+  + getName() : String∂
   + getRarity() : String
   + {abstract} getEffectDescription() : String
-  + {abstract} asCsvRecord() : String
+  + {abstract} asCsvRecord() : String∂
 }
 
 class Weapon {
